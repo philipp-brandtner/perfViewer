@@ -63,14 +63,14 @@ MacControl::indSlotTick()
 
 **Options to start perfViewer**
 ```console
-python3 perfviewer.py -r --trace probe_lists/probes_tnw50_waveformblack.list -t 0.8
-Connect to 192.168.24.200 and record data for 0.8 sec with probes from TNW50 WaveformBlack. Data is written to power-tools/SampleData*.
+python3 perfviewer.py -r --trace probe_lists/probes_1.list -t 0.8
+Connect to 192.168.24.200 and record data for 0.8 sec with probes. Data is written to power-tools/SampleData*.
 
-python3 perfviewer.py -b --trace probe_lists/probes_ff_redpayloadtgt.list -t 0.8 --overwrite
-Connect to 192.168.24.201 and record data for 0.8 sec with probes from FF RedPayloadTgt. Data is written to power-tools/SampleData. Data in SampleData will be overwritten, if the folder exists.
+python3 perfviewer.py -b --trace probe_lists/probes_2.list -t 0.8 --overwrite
+Connect to 192.168.24.201 and record data for 0.8 sec with probes. Data is written to power-tools/SampleData. Data in SampleData will be overwritten, if the folder exists.
 
-python3 perfviewer.py -b --trace probe_lists/probes_tnw50_waveformblack.list -e ../executables/WaveformBlack
-Don't download executable from target, but use WaveformBlack from ../executables/WaveformBlack
+python3 perfviewer.py -b --trace probe_lists/probes_3.list -e ../executables
+Don't download executable from target, but use from ../executables
 
 python3 perfviewer.py -b -t 0.8
 Connect to 192.168.24.201 and record data for 0.8 sec without probes. Data is written to power-tools/SampleData*.
@@ -99,7 +99,7 @@ Output is generated in the console and following files are written to SampleData
 - Console_Output.csv: File with console data
 - perf.data: Raw perf file. Use 'perf script' to display content 
 - perf.data.sched:\*, perf.data.irq:\*, ...: Per event dumps
-- Executables Ex.: WaveformControlRed: Executables to extract probe addresses
+- Executables Ex.: Exe1: Executables to extract probe addresses
 
 Probe data is also displayed in task usage overview.
 
@@ -109,8 +109,8 @@ Load data from directory and display in perfViewer.
 python3 perfviewer.py --offline ../SampleData --trace 
 Use data from directory SampleData and activate tracing.
 
-python3 perfviewer.py --offline ../SampleData_black_tx_10sec 
-Use data from directory SampleData_black_tx_10sec without tracing.
+python3 perfviewer.py --offline ../SampleData_1 
+Use data from directory SampleData_1 without tracing.
 ```
 
 
