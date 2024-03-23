@@ -1,0 +1,7 @@
+# Ignore __pycache__ directories
+perfViewer/__pycache__/
+IdleTimeAnalyzer/__pycache__/
+
+# Ignore .idea directories
+perfViewer/.idea/
+IdleTimeAnalyzer/.idea/

@@ -1,0 +1,10 @@
+#############################################
+#######   perf probe definition file   ######
+#############################################
+
+EXECUTABLE = testExecutable
+PATH_TO_EXECUTABLE = /home/rootfs/
+
+# Sergej
+ExeController::RunInfinite()
+ExeController::PushBack()
