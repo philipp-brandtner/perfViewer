@@ -1,4 +1,6 @@
 # perfViewer
+## Description
+Provides a suite of functionalities for analyzing performance metrics (Linux perf) related to CPU and task runtime behavior. Here's a breakdown of its capabilities:
 ## Installation
 ```shell
 # download this package
